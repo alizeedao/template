@@ -1,0 +1,36 @@
+.button {
+  @include transition(background-color 0.25s ease, color 0.25s ease);
+  background: $theme-color;
+  border: 1px solid $theme-color;
+  border-radius: 2px;
+  color: #fff;
+  display: inline-block;
+  vertical-align: top;
+  font: normal 400 18px/39px $font-default;
+  text-align: center;
+  height: 38px;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: none;
+  letter-spacing: 2px;
+  width: 325px;
+  text-align: center;
+  padding: 0;
+
+  &:hover {
+    background-color: #fff;
+    color: $theme-color;
+    text-decoration: none;
+  }
+
+  &[disabled],
+  &[disabled]:hover {
+    background: lighten($theme-color, 20%);
+    border: 1px solid lighten($theme-color, 20%);
+    color: $theme-color;
+  }
+}
+
+.form-actions .button{
+  width: 341px;
+}

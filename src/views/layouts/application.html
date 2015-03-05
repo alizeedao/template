@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ data.description }}">
+  <link rel="icon" href="img/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:600,900' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lora&subset=latin,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400italic,700,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href="css/{{ data.name }}-{{ data.version }}.css" rel="stylesheet" media="screen">
+  {% block css %}{% endblock %}
+  <title>{{ data.title }} - {{ page|capitalize }}</title>
+  <script src="js/vendor/modernizr.custom.js"></script>
+</head>
+<body class="page-{{ page }}">
+  {% block content %}{% endblock %}
+  <script src="js/{{ data.name }}-{{ data.version }}.js"></script>
+  {% block js %}{% endblock %}
+</body>
+</html>

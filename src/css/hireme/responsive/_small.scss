@@ -1,0 +1,79 @@
+@media only screen and ($media-width-name: $media-break-small) {
+  html{
+    overflow-x: hidden;
+  }
+  .curriculum-date,
+  .curriculum-date i {
+    float: none;
+    width: auto;
+    text-align: center;
+  }
+
+  .homepage-nav-link{
+    display: block
+  }
+
+  .homepage-nav-link + .homepage-nav-link{
+    margin: 0 0 30px;
+  }
+
+  .homepage-summary p{
+    margin-bottom: 38px;
+  }
+
+  .button{
+    padding: 0 30px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .page-404 footer:before{
+    font-size: 200px;
+    bottom: 0;
+    height: 440px;
+  }
+  .logo-line span{
+    padding: 0 20px;
+    font-size: 9px;
+  }
+  .homepage-nav li{
+    float: none;
+    width: 100%;
+    padding-left: 0 !important;
+  }
+
+  .gallery-slideshow li{
+    @include size(320px auto);
+    max-height: auto;
+    margin: 0 0 0 0;
+    left: 0;
+    top: 0;
+  }
+
+  .portfolio-list li{
+      float: none;
+      margin:  0 auto 15px;
+  }
+  .portfolio-list li:nth-child(3n+3),
+  .portfolio-list li:nth-child(4n+4){
+      margin: 0 auto 15px;
+  }
+
+  .categories{
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+
+  .homepage-signature{
+    margin-top: 0;
+  }
+
+  .ribbon span{
+    width: 303px;
+  }
+
+  .form-actions .button{
+    width: 250px;
+  }
+}

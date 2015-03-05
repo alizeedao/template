@@ -1,0 +1,14 @@
+{% extends "application.html" %}
+
+{% block content %}
+  <div class="wrapper-content">
+    <div class="container container-404">
+      <h3 class="title-404">OOPS!</h3>
+      <p>
+        It looks like that page no longer exists. Would you like to go to homepage instead?
+      </p>
+      <a href="index.html" class="button">homepage</a>
+    </div>
+  </div>
+  {% include "footer.html" %}
+{% endblock %}

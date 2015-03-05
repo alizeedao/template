@@ -1,0 +1,66 @@
+.categories {
+  @include size(250px);
+  @include position(absolute, 0 null null 0);
+  color: $theme-color;
+  list-style: none;
+  float: left;
+  z-index: 9;
+  font: normal 500 16px/28px $font-default;
+  margin: 0 50px 50px 0;
+
+  .nav-pills > a {
+    @include size(auto);
+    border-radius: 0px;
+    color: $theme-sub-title-color;
+    display: block;
+    float: none;
+    padding: 0 9px 0 0;
+    text-align: left;
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .badge {
+    @include size(auto 17px);
+    background: $theme-color;
+    border-radius: 9px;
+    color: #fff;
+    display: block;
+    padding: 0 6px;
+    font-size: 12px;
+    line-height: 19px;
+    text-align: center;
+    margin: 5px 0;
+    font-weight: 700;
+    visibility: hidden;
+  }
+
+  .nav {
+    > a {
+      &:hover{
+        font-weight: bold;
+        text-decoration: none;
+        .badge {
+          visibility: visible;
+          background: $theme-color;
+          color: #fff;
+        }
+      }
+      &.tt-current {
+        background-color: $theme-color-bg;
+        padding-left: 15px;
+        font-weight: bold;
+
+        .badge {
+          visibility: visible;
+          background: $theme-color;
+          color: #fff;
+        }
+      }
+
+      &:not(.tt-current):focus {
+        background-color: transparent;
+      }
+    }
+  }
+}

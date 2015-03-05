@@ -1,0 +1,67 @@
+.logo {
+  font-family: $font-raleway;
+  display: inline-block;
+  padding: 0 10px;
+  position: relative;
+  margin: 46px 0 0 12px;
+  max-width: 300px;
+  vertical-align: top;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+
+  &,
+  &:hover { 
+    color: #000;
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.logo-name {
+  display: block;
+  font-size: 27px;
+  font-weight: 900;
+  line-height: 27px;
+  margin: 0 0 10px;
+}
+
+.logo-line {
+  display: block;
+  text-transform: uppercase;
+  color: #fff;
+
+  span {
+    background: $theme-color;
+    padding: 0 45px;
+    position: relative;
+    margin: 0 auto;
+    vertical-align: top;
+    overflow: hidden;
+    display: none;
+    line-height:26px;
+    font-size: 12px;
+    font-weight: 600;
+    &:before,
+    &:after {
+      @include position(absolute, 50% null null null);
+      @include size($logo-line-triangle-width $logo-line-triangle-height);
+      content: '';
+      margin-top: -($logo-line-triangle-height/2);
+    }
+
+    &:before {
+      background: no-repeat url('../img/triangle-left.png') 100% 50%;
+      left: -($logo-line-triangle-width - 20);
+    }
+
+    &:after {
+      background: no-repeat url('../img/triangle-right.png') 0 50%;
+      right: -($logo-line-triangle-width - 20);
+    }
+  }
+}

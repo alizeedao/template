@@ -1,0 +1,112 @@
+@media only screen and ($media-width-name: $media-break-tablets) {
+  .homepage-bg {
+    display: none;
+  }
+
+  .homepage-summary{
+    width: 100%;
+  }
+
+  .homepage-nav{
+    max-width: 100%;
+  }
+
+  header {
+    text-align: center;
+
+    .navbar {
+      float: none;
+    }
+
+    .navbar-nav {
+      float: none;
+
+      > li {
+        float: none;
+      }
+    }
+
+    .nav {
+      > li {
+        display: inline-block;
+      }
+    }
+  }
+
+  .skills {
+    .programm-use {
+      padding: 46px 0 34px;
+      .programm-title{
+        float: none;
+        margin-bottom: 18px;
+      }
+      .programm-list{margin-bottom: 18px;}
+    }
+    .reference-bl{
+      padding-top: 41px;
+      .ref-title{
+        margin-bottom: 36px;
+      }
+    }
+
+
+
+  }
+
+  .contacts-wrapper {
+    header {
+      margin-bottom: 0;
+    }
+
+    footer {
+      margin-top: 0px;
+    }
+  }
+
+  .contacts {
+    height: auto;
+    padding: 0 0 110px;
+    min-height: auto;
+  }
+
+  .contacts-info{
+    padding: 10px 10px 0;
+  }
+
+  .ribbon {
+    width: 90%;
+    margin: 20px auto 30px;
+  }
+
+  .contacts-form {
+    margin: 0 0 20px;
+
+    li {
+      margin: 0 57px 100px;
+
+      &:nth-child(4n){
+        margin: 0 57px 100px;
+      }
+    }
+  }
+
+  .portfolio-list {
+    li {
+      margin: 0 57px 100px;
+      &:nth-child(4n+4),
+      &:nth-child(3n+3){
+        margin: 0 57px 100px;
+      }
+    }
+  }
+
+  .categories {
+    left: 49px;
+    margin-left: 0;
+  }
+
+  .container-404 {
+    padding-top: 75px;
+  }
+
+}

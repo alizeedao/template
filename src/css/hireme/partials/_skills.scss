@@ -1,0 +1,169 @@
+.skills {
+	padding: 0 0 69px;
+	.skills-ribbon {
+		margin: 30px auto 58px;
+	}
+	&.loading{
+		span.bd{
+			width: 0 !important;
+		}
+	}
+	.skills-info{
+		.skill-name{
+			margin: 0 0 7px;
+			padding: 0 0 2px;
+			font-weight: bold;
+			font-size: 12px;
+			line-height: 26px;
+			position: relative;
+			display: block;
+			span.bd{
+				display: block;
+				text-indent: -999em;
+				@include size(0 0);
+				transition: all 3s;
+				transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
+				@include position(absolute, null null 0 0);
+				border-bottom: 2px solid $theme-border-color;
+			}
+		}
+		.stars-list{
+			margin: 0 0 26px;
+			padding: 0;
+			overflow: hidden;
+			li{
+				list-style: none;
+				float: left;
+				color: $theme-color;
+				font-size: 18px;
+			}
+		}
+		.skill-title{
+			margin: 0 0 32px;
+			padding: 0;
+			text-transform: uppercase;
+			font-size: 16px;
+			line-height: 26px;
+			letter-spacing: 2px;
+		}
+		p{
+			margin: 0 0 26px;
+			line-height: 26px;
+			font-size: 14px;
+		}
+	}
+	.programm-use{
+		background: $theme-border-color;
+		padding: 76px 0 64px;
+		.programm-title{
+			text-transform: uppercase;
+			margin: 0 42px 48px 0;
+			padding: 0;
+			font-weight: normal;
+			font-size: 30px;
+			line-height: 32px;
+			float: left;
+		}
+		.programm-list{
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			li{
+				list-style: none;
+				line-height: 32px;
+				margin-right: 40px;
+				float: left;
+			}
+		}
+		p{			
+			margin: 0;
+			line-height: 26px;
+			font-size: 14px;
+		}
+	}
+	.reference-bl{
+		padding: 71px 0 0;
+		.carousel{
+			border-top: 1px solid $theme-border-color;
+			border-bottom: 1px solid $theme-border-color;
+			padding: 35px 0 47px;
+			margin: 0 10px;
+		}
+		.ref-title{
+			font-family: $font-lora;
+			font-size: 30px;
+			font-weight: normal;
+			line-height: 30px;
+			margin: 0 10px 53px;
+			padding: 0;
+			text-align: right;
+		}
+		.name-ref{
+			padding: 13px 0 0;
+			margin: 0;
+			font-size: 30px;
+			line-height: 30px;
+			text-transform: uppercase;
+			font-weight: normal;
+			float: left;
+			text-align: right;
+			width: 336px;
+			span{
+				position: relative;
+				z-index: 3;
+			}
+			.prof{
+				position: relative;
+				display: inline-block;
+				top:-4px;
+				z-index: 1;
+				font-size: 10px;
+				height: 17px;
+				letter-spacing: 2px;
+				line-height: 19px;
+				background: $theme-color;
+				padding: 0 15px 0 32px;
+				text-transform: uppercase;
+				color: #fff;
+				font-weight: bold;
+				&:before {
+                    @include position(absolute, 50% null null null);
+                    @include size($logo-line-triangle-width $logo-line-triangle-height);
+                    content: '';
+                    z-index: 1;
+                    margin-top: -($logo-line-triangle-height/2);
+                    background: no-repeat url('../img/triangle-left.png') 100% 50%;
+                    left: -($logo-line-triangle-width - 22);
+                }
+			}
+		}		
+		p{
+			width: 794px;
+			float: right;
+			font-size: 14px;
+			line-height: 26px;
+			margin: 0;
+		}
+		.carousel-indicators{
+			margin: 0;
+			padding: 0;
+			width: auto;
+			@include position(absolute, auto 0 30px auto);
+			li{
+				@include size(10px 10px);
+				border-radius: 10px;
+				float: left;
+				list-style: none;
+				margin: 0 0 0 7px;
+				background: $theme-border-color;
+				border: none !important;
+				&.active,
+				&:hover{
+					background: $theme-color;
+				}
+			}
+		}
+	}
+}
+
+

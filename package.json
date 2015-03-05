@@ -1,0 +1,39 @@
+{
+  "version": "1.0.0",
+  "name": "hireme",
+  "theme": "butterfly_bush",
+  "title": "HireMe",
+  "description": "Your patients and your team are everywhere. With Listrunner, put everything that is happening on the ward in one place.",
+  "baseurl": "http://terranet-themes.com/",
+  "email_contact": "info@terranet.md",
+  "author": {
+    "name": "TerraNet",
+    "email": "info@terranet.md",
+    "url": "https://github.com/TerranetMD"
+  },
+  "contributors": [
+    {
+      "name": "Vitaly Rotari",
+      "email": "cky.adc@gmail.com",
+      "url": "https://github.com/vitalyrotari"
+    }
+  ],
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.4.0",
+    "grunt-contrib-imagemin": "~0.4.1",
+    "grunt-contrib-cssmin": "~0.9.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-sass": "~0.7.3",
+    "nunjucks": "~1.0.5",
+    "grunt-nunjucks-2-html": "https://github.com/TerranetMD/grunt-nunjucks-2-html/tarball/0.3.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-connect": "~0.8.0",
+    "grunt-contrib-livereload": "~0.1.2",
+    "grunt-contrib-htmlmin": "~0.3.0",
+    "grunt-express": "~1.4.0",
+    "grunt-open": "~0.2.3",
+    "grunt-contrib-copy": "~0.5.0"
+  }
+}

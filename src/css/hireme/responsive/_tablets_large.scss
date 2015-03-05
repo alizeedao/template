@@ -1,0 +1,28 @@
+@media only screen and ($media-width-name: $media-break-tablets-max) {
+  body{
+    overflow-x: hidden;
+  }
+  .homepage-bg{
+    width: 120%
+  }
+
+  .navbar-default .navbar-nav > li{
+    a{
+      padding-left: 34px;
+      padding-right: 17px;
+      svg{
+        left: 12px;
+      }
+    }
+  }
+
+  .skills .reference-bl{
+    .name-ref{
+      width: 30%;
+    }
+    p{
+      width: 65%;
+    }
+  }
+
+ }

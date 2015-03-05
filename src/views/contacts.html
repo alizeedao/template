@@ -1,0 +1,52 @@
+{% extends "application.html" %}
+
+{% block content %}
+  <div class="wrapper-content">
+    {% include "header.html" %}
+    <section class="contacts">
+      <div class="container">
+        <h3 class="ribbon contacts-ribbon">Contact ME<span></span></h3>
+        <form action="php/contact.php" class="col-md-8 contacts-form" id="contact-form" method="post" data-unknown-error-message="Unknown form error, please try again.">
+          <fieldset>
+            <div class="form-group">
+              <input class="form-control" name="name" type="text" placeholder="YOUR NAME">
+            </div>
+            <div class="form-group">
+              <input class="form-control" name="email" type="text" placeholder="E-MAIL">
+            </div>
+            <div class="form-group">
+              <input class="form-control" name="subject" type="text" placeholder="THE SUBJECT">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" placeholder="YOUR MESSAGE"></textarea>
+            </div>
+            <div class="form-actions">
+              <button class="button">send message</button>
+            </div>
+          </fieldset>
+        </form>
+        <div class="col-md-4 contacts-info">
+          <h3 class="contact-title">Get in touch with me</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vitae eget dolor. Proin eu ultrices libero. Curabitur vulputate vestibulum elementum.</p>
+          <h3 class="contact-title">Also you can find me here</h3>
+
+          <div class="contact-social-links">
+            <a href="#" class="icon-facebook"></a>
+            <a href="#" class="icon-twitter"></a>
+            <a href="#" class="icon-vimeo"></a>
+            <a href="#" class="icon-youtube"></a>
+            <a href="#" class="icon-behance"></a>
+          </div><!-- .social-links -->
+          <h3 class="contact-title mb-17">additional information</h3>
+          <div class="vcard">
+              <span class="address">350 Fifth Avenue, 34th floor. New York, NY New York, NY</span>
+              <span class="phone">+373 22 54 45 63 / +373 22 89 98 45</span>
+              <a href="mailto:manson.johnes@hireme.com" class="mail">manson.johnes@hireme.com</a>
+          </div><!-- .vcard -->
+        <div class="clearfix"></div>
+      </div>
+      </div>
+    </section><!-- .contacs -->
+  </div>
+  {% include "footer.html" %}
+{% endblock %}

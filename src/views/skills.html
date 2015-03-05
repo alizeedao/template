@@ -1,0 +1,100 @@
+{% extends "application.html" %}
+
+{% block content %}
+    {% include "header.html" %}
+    <section class="skills loading">
+        <div class="container">
+            <h3 class="ribbon skills-ribbon">Work Skills <span></span></h3>
+            <div class="skills-info row">
+                <div class="col-md-4">
+                    <span class="skill-name">Interface Design<span class="bd" style="width: 60%;"></span></span>
+                    <ul class="stars-list">
+                        <li class="icon-star"></li>
+                        <li class="icon-star"></li>
+                        <li class="icon-star"></li>
+                        <li class="icon-star"></li>
+                    </ul>
+                    <h3 class="skill-title">User Experience</h3>
+                    <p>Good user interface design facilitates finishing the task at hand without drawing unnecessary attention to itself. Graphic design may be utilized to support its usability, influencing how the user performs certain interactions and improving the aesthetic appeal of the design; design aesthetics may enhance or detract from the ability of users to use the functions of the interface.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="skill-name">Print Design<span class="bd" style="width: 40%;"></span></span>
+                    <ul class="stars-list">
+                        <li class="icon-star"></li>
+                        <li class="icon-star"></li>
+                        <li class="icon-star"></li>
+                    </ul>
+                    <h3 class="skill-title">Magazines, Tri-folds &amp; Cards</h3>
+                    <p>Common uses of graphic design include identity (logos and branding), publications (magazines, newspapers and books), print advertisements, posters, billboards, website graphics and elements, signs and product packaging. </p>
+                    <p>For example, a product package might include a logo or other artwork, organized text and pure design elements such as images, shapes and color which unify the piece. </p>
+                </div>
+                <div class="col-md-4">
+                    <span class="skill-name">Webdesign &amp; Illustrations<span class="bd" style="width: 100%;"></span></span>
+                    <ul class="stars-list">
+                        <li class="icon-star"></li>
+                        <li class="icon-star"></li>
+                        <li class="icon-star"></li>
+                        <li class="icon-star"></li>
+                        <li class="icon-star"></li>
+                    </ul>
+                    <h3 class="skill-title">Customized graphic elements</h3>
+                    <p>Web design encompasses many different skills and disciplines in the production and maintenance of websites.</p>
+                    <p>The different areas of web design include web graphic design; interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization.</p>
+                </div>
+            </div>
+        </div>
+        <div class="programm-use">
+            <div class="container">
+                <h3 class="programm-title">
+                    <b>Software</b> that i daily use:
+                </h3>
+                <ul class="programm-list">
+                    <li><img src="img/fw-logo.png" alt=""></li>
+                    <li><img src="img/adobe-logo.png" alt=""></li>
+                    <li><img src="img/ps-logo.png" alt=""></li>
+                    <li><img src="img/id-logo.png" alt=""></li>
+                    <li><img src="img/fl-logo.png" alt=""></li>
+                    <li><img src="img/ai-logo.png" alt=""></li>
+                </ul>
+                <div class="clearfix"></div>
+                <p>The first requisite is talent. You must have an instinctive ability to exercise good judgment in manipulating the formal elements of visual communication such as contrast, scale, color, pacing, and typography. You must be able to use them effectively to develop new and appropriate visual solutions to complex communications problems. If you don't possess this creative ability, or the potential to develop it over the course of your education, then you are not cut out to be a graphic designer.</p>
+            </div>
+        </div>
+        <div class="reference-bl">
+            <div class="container">
+                <h3 class="ref-title">REFERENCES</h3>
+                <div id="reference-slider" class="carousel slide" data-ride="carousel">
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <h3 class="name-ref"><span><b>Andrew</b> Michaels</span><span class="prof">General Manager of “SKY” LTD</span></h3>
+                            <p>Good user interface design facilitates finishing the task at hand without drawing unnecessary attention to itself. Graphic design may be utilized to support its usability, influencing how the user performs certain interactions and improving the aesthetic appeal of the design;</p>
+                        </div>
+                        <div class="item">
+                            <h3 class="name-ref"><span><b>Andrew</b> Michaels</span><span class="prof">General Manager of “SKY” LTD</span></h3>
+                            <p>Good user interface design facilitates finishing the task at hand without drawing unnecessary attention to itself. Graphic design may be utilized to support its usability, influencing how the user performs certain interactions and improving the aesthetic appeal of the design;</p>
+                        </div>
+                        <div class="item">
+                            <h3 class="name-ref"><span><b>Andrew</b> Michaels</span><span class="prof">General Manager of “SKY” LTD</span></h3>
+                            <p>Good user interface design facilitates finishing the task at hand without drawing unnecessary attention to itself. Graphic design may be utilized to support its usability, influencing how the user performs certain interactions and improving the aesthetic appeal of the design;</p>
+                        </div>
+                        <div class="item">
+                            <h3 class="name-ref"><span><b>Andrew</b> Michaels</span><span class="prof">General Manager of “SKY” LTD</span></h3>
+                            <p>Good user interface design facilitates finishing the task at hand without drawing unnecessary attention to itself. Graphic design may be utilized to support its usability, influencing how the user performs certain interactions and improving the aesthetic appeal of the design;</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#reference-slider" data-slide-to="0" class="active"></li>
+                        <li data-target="#reference-slider" data-slide-to="1"></li>
+                        <li data-target="#reference-slider" data-slide-to="2"></li>
+                        <li data-target="#reference-slider" data-slide-to="3"></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section><!-- .skills -->
+{% include "footer.html" %}
+{% endblock %}

@@ -1,0 +1,147 @@
+.page-index {
+  .wrapper-content {
+    &>.container {
+      padding: 122px 10px 98px;
+      position: relative;
+      z-index: 1;
+    }
+  }
+  
+
+  header {
+    padding: 64px 0 0;
+    .container{
+      border: none
+    }
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .logo {
+    margin:0;
+    padding: 0;
+    max-width: 575px;
+    color: #000;
+  }
+
+  .logo-name {
+    font-size: 41px;
+    line-height: 41px;
+    margin: 0 0 9px;
+    display: block;
+  }
+
+  .logo-line {
+    font-size: 12px;
+    display: block;
+    line-height: 20px;
+    span {
+      display: block;
+    }
+  }
+}
+
+.homepage-bg {
+  $width: 1400px;
+
+  @include position(absolute, 0 null 98px 0);
+  overflow: hidden;
+  z-index: 0;
+  width: 100%;
+
+  &:after {
+    @include position(absolute, 0 0 0 0);
+    @include transform(translate3d(40px,0,0));
+    @include transition-property(transform, opacity);
+    @include transition-duration(1.0s, 1.0s);
+    @include transition-timing-function(ease, ease);
+    background: transparent url('../img/hireme_author_img.jpg') 100% 100% no-repeat;
+    content: '';
+    // margin-left: -($width/2);
+    opacity: 0;
+  }
+}
+
+.page-ready {
+  .homepage-bg:after {
+    @include transform(translate3d(0,0,0));
+    opacity: 1;
+  }
+}
+
+.homepage-summary {
+  font-family: $font-default;
+  font-size: 14px;
+  line-height: 26px;
+  width: 50%;
+  margin: 0 0 10px;
+  min-height: 400px;
+  p {
+    margin: 0 0 68px;
+  }
+  .home-title{
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    margin: 0 0 26px;
+  }
+}
+
+.homepage-signature {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: -17px;
+}
+
+.homepage-nav {
+  padding: 49px 0 1px;
+  margin: 0 0 65px;
+  border-top: 1px solid $theme-border-color;
+  border-bottom: 1px solid $theme-border-color;
+  max-width: 413px;
+  li{
+    float: left;
+    width: 50%;
+    list-style: none;
+    margin: 0 0 42px;
+    letter-spacing: 3px;
+    &:nth-child(2n+2){
+      padding-left: 26px;
+    }
+    &.clearfix{
+      width: 100%;
+      float: none;
+      padding: 0;
+      margin: 0;
+    }
+    a{
+      display: inline-block;
+      line-height: 32px;
+      height: 32px;
+      font-size: 14px;
+      padding-left: 59px;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: $theme-link-color;
+      text-decoration: none;
+      position: relative;
+      transition: color .35s;
+      & > svg{
+        @include position(absolute, 50% null null 0);
+        @include size(32px);
+        @include transform(translate(0,-50%));
+        fill: $theme-color;
+        transition: transform .35s;
+      }
+      &:hover{
+        color: $theme-color;
+        svg{
+          @include transform(scale(1.2)translate(0,-50%));
+        }
+      }
+    }
+  }
+}

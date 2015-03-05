@@ -1,0 +1,25 @@
+/* breakpoint 992-1199   Desktop vesion*/
+@media only screen and ($media-width-name: 1199px) {
+  .portfolio-list {
+    li{
+      margin: 0 33px 60px;
+      &:nth-child(4n+4){
+        margin: 0 33px 60px;
+      }
+      &:nth-child(3n+3){
+        margin-right: 0;
+      }
+    }
+  }
+
+  .categories{
+    margin-left: 33px;
+  }
+  
+  .gallery-slideshow li.show{
+   visibility: hidden
+  }
+  .gallery-slideshow li.show.current{
+    visibility: visible
+  }
+}

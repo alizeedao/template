@@ -1,0 +1,289 @@
+  @media only screen and ($media-width-name: $media-break-phones) {
+  header {
+    text-align: center;
+
+    .navbar {
+      float: none;
+      min-height: 34px;
+      margin-bottom: 0;
+      text-align: left;
+    }
+
+    .navbar-toggle {
+      margin: 10px auto;
+      float: none;
+      display: block;
+    }
+    .navbar-default .navbar-nav > li{
+      &.border-nav{display: none}
+      margin: 0;
+      > a{
+        padding-top: 10px;
+        padding-bottom: 15px;
+        & svg{
+          top: 11px;
+        }
+      }
+      & svg{
+        top: 11px;
+      }
+    }
+  }
+  
+  .gallery-slideshow li{
+    @include size(400px 552px);
+    margin: -280px 0 0 -200px;
+  }
+  
+  .page-index header{
+    padding: 20px 0; 
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+
+  .homepage {
+    header{
+      padding: 15px 0 0;
+    }
+
+    .logo-cont {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+
+      .name{
+        font-size: 34px;
+        line-height: 34px;
+      }
+
+      .color-bg{
+        font-size: 11px;
+
+        span {
+          width: 100%;
+
+          &:before,
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .homepage-cont {
+    > .container{
+      padding: 20px 5px 0;
+    }
+
+    .author-message{
+      width: auto;
+      line-height: 20px;
+      min-height: 0px;
+    }
+
+    .author-signature{
+      display: block;
+      margin: 0 auto;
+      width: 200px;
+    }
+  }
+
+  .homepage-nav-cont {
+    margin: 0 0 35px;
+    text-align: center;
+
+    .home-nav-link {
+      width: 50%;
+      margin: 0 0 15px;
+      text-align: left;
+
+      & + .home-nav-link {
+        margin: 0 0 15px;
+      }
+    }
+
+    .button {
+      padding: 0 30px;
+    }
+  }
+
+  .homepage-bg {
+    display: none;
+  }
+
+  .navbar-nav {
+    margin: 5px 0;
+
+    > li {
+      > a {
+        padding: 10px 0;
+      }
+    }
+  }
+
+  .navbar-default {
+    .navbar-nav {
+      > li {
+        padding: 0;
+        display: block;
+
+        & + &:before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .ribbon {
+    padding: 0;
+    font-size: 24px;
+    line-height: 34px;
+    width: 100%;
+
+    span {
+      width: 343px;
+    }
+
+  }
+
+  .ribbon-help{
+    margin: 0 auto 45px;
+  }
+    /* ---- Portfolio ---- */
+    .portfolio{padding: 0 0 20px;}
+    .portfolio > .container{padding: 0;}
+    
+    .categorys{left: 0;}
+
+    .recommendations{
+        padding: 0;
+    }
+    .recommendations h5{
+        line-height: 20px;
+    }
+    .recommendations .item{
+        background: url('/img/hireme_recommend_bg.png') 4px 8px no-repeat;
+        padding: 0 5px 0 50px;
+        margin: 0 0 20px;
+    }
+    .recommendations .item p{
+        line-height: 20px;
+    }
+
+    /* ---- HireMe Contacts --- */
+    .contacts-form{
+        padding: 0 5px;
+        margin: 0 0 20px;
+    }
+    .contacts-form .send-btn{
+        padding: 0 45px;
+        display: block;
+        margin: 0 auto;
+    }
+    .contacts .contacts-info{
+        padding: 0 5px;
+        line-height: 20px;
+    }
+    .contacts .contacts-info .item{
+        line-height: 24px;
+    }
+    .contacts-info .social-links{
+        text-align: center;
+    }
+    footer{
+        text-align: center;
+        padding: 0 0 10px;
+    }
+    footer .copy{float: none;}
+    footer .social-links{
+        text-align: center;
+    }
+    .page-index footer,
+    .page-contacts footer,
+    .page-portfolio footer {margin-top: 0}
+    .page-404 .container{
+        padding: 25px 10px;
+    }
+    .page-index .logo{
+      padding: 0;
+    }
+    .page-index .logo-line span:before{
+      left: -30px;
+    }
+    .page-index .logo-line span:after{
+      right: -30px
+    }
+    .page-index .wrapper-content .container{
+      padding: 0 10px;
+    }
+    .homepage-nav{      
+      margin-bottom: 30px;
+    }
+    .page-404 footer:before{
+        text-align: right;
+        font-size: 300px;
+        bottom: 60px;
+    }
+
+    .footer-social-links{
+      text-align: center
+    }
+    .footer-copyright{float: none}
+    .homepage-summary{width: auto}
+
+  .curriculum{
+    padding: 0 10px 15px;
+    .ribbon{
+      margin: 30px auto 38px;
+    }
+    .curriculum-list{
+      .curriculum-item{
+        display: block;
+        margin-bottom: 30px;
+        .left{
+          display: block;
+          padding: 0 0 30px;
+          width: auto;
+          border: none;
+          span.date:before{display: none}
+        }
+        .right{
+          display: block;
+          width: auto;
+          padding: 0;
+        }
+      }
+    }
+  }
+  .skills {
+    .reference-bl .name-ref span{
+      margin-bottom: 10px;
+    }
+    .programm-use {    
+      padding-left: 15px;
+      padding-right: 15px;
+      .programm-list{
+        text-align: center;
+        li{
+          display: inline-block;
+          float: none;
+          margin: 0 30px 18px;
+        }
+      }
+    }
+  }  
+
+  .skills .reference-bl .name-ref{
+    width: 100%;
+    margin: 0;
+    float: none;
+  }
+
+  .skills .reference-bl p{
+    width: 100%;
+    margin: 0;
+  }
+}
